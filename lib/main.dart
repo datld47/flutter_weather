@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:weather/screens/home_page.dart';
+import 'screens/loading_screen.dart';
 
-void main() => runApp(WeatherApp());
+void main() => runApp(MyApp());
 
-class WeatherApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: HomePage(),
+      home: LoadingScreen(),
     );
   }
 }
-
